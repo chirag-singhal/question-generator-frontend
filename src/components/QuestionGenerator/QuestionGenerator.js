@@ -17,7 +17,7 @@ function QuestionGenerator() {
     setIsLoading(true);
     setQuestions([]);
     setErrorMessage('');
-    fetch('https://backend-glyphic-env.eba-4jp8mcst.ap-south-1.elasticbeanstalk.com/generate_questions', {
+    fetch('http://backend-glyphic-env.eba-4jp8mcst.ap-south-1.elasticbeanstalk.com/generate_questions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
